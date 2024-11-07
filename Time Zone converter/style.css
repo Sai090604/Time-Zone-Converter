@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ecf0f1;
+}
+
+.container {
+  background: rgba(20, 20, 30, 0.9);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #3498db, 0 0 40px #8e44ad;
+  text-align: center;
+  max-width: 420px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #ecf0f1;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 12px #3498db, 0 0 20px #8e44ad;
+}
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1rem;
+}
+
+label {
+  color: #bdc3c7;
+  margin-bottom: 0.5rem;
+}
+
+.time-selection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="time"] {
+  padding: 1rem;
+
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ecf0f1;
+}
+
+.am-pm-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.toggle-button {
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-button.active {
+  background-color: #8e44ad;
+  box-shadow: 0 0 10px #8e44ad, 0 0 20px #3498db;
+}
+
+select {
+  padding: 0.7rem;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background: rgba(0, 132, 255, 0.15);
+  color: #ecf0f1;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  color: #ffffff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #8e44ad, 0 0 20px #3498db;
+}
+
+button:hover {
+  background-color: #8e44ad;
+}
+
+.output {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #3498db;
+}

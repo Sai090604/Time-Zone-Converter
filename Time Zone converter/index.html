@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Zone Converter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Time Zone Converter</h1>
+    <div class="converter">
+      <div class="input-group">
+        <label for="timeInput">Select Time</label>
+        <div class="time-selection">
+          <input type="time" id="timeInput">
+          <div class="am-pm-toggle">
+            <button id="am-button" class="toggle-button active">AM</button>
+            <button id="pm-button" class="toggle-button">PM</button>
+          </div>
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="fromCountrySelect">From Time Zone</label>
+        <select id="fromCountrySelect">
+          <option value="0">UTC</option>
+          <option value="5.5">India (IST)</option>
+          <option value="-5">USA (EST)</option>
+          <option value="1">Europe (CET)</option>
+          <option value="8">China (CST)</option>
+          <option value="9">Japan (JST)</option>
+          <option value="-8">USA (PST)</option>
+          <option value="2">Eastern Europe (EET)</option>
+          <option value="10">Australia (AEST)</option>
+          <option value="3">Russia (MSK)</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="toCountrySelect">To Time Zone</label>
+        <select id="toCountrySelect">
+          <option value="0">UTC</option>
+          <option value="5.5">India (IST)</option>
+          <option value="-5">USA (EST)</option>
+          <option value="1">Europe (CET)</option>
+          <option value="8">China (CST)</option>
+          <option value="9">Japan (JST)</option>
+          <option value="-8">USA (PST)</option>
+          <option value="2">Eastern Europe (EET)</option>
+          <option value="10">Australia (AEST)</option>
+          <option value="3">Russia (MSK)</option>
+        </select>
+      </div>
+      <button onclick="convertTime()">Convert</button>
+      <div class="output">
+        <p id="output">Converted Time: --:--</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
